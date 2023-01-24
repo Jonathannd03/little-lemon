@@ -30,10 +30,8 @@ const navMenu = [
 ];
 
 const Navbar = () => {
-  return (
-    <div className="navbar">
+  return (<nav>
       <img src={logo} alt="logo" />
-      <nav>
         <ul>
           {navMenu.map((menu, index) => {
             return (
@@ -46,7 +44,6 @@ const Navbar = () => {
           })}
         </ul>
       </nav>
-    </div>
   );
 };
 

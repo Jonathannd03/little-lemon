@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../assets/images/logo.png";
+import "./Footer.scss"
 
 const navMenu = [
   {
