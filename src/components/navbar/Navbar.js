@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../assets/images/logo.png";
+import logo from "../../assets/images/logo.png";
+import "./Navbar.scss";
 
 const navMenu = [
   {
@@ -30,7 +31,7 @@ const navMenu = [
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="navbar">
       <img src={logo} alt="logo" />
       <nav>
         <ul>
