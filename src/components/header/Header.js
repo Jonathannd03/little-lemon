@@ -5,9 +5,9 @@ import logo from "../../assets/images/logo.png";
 
 const Header = () => {
   return (
-    <div className="header">
-      <section className="content">
-        <h2>Little Lemon</h2>
+    <div className="header-container">
+      <section className="container-item1">
+        <h1>Little Lemon</h1>
         <p className="city-name">Chicago</p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br></br> sed
@@ -18,9 +18,10 @@ const Header = () => {
         <Button child="Reserve a table" />
       </section>
 
-      <section className="picture">
+      <section className="container-item2">
         <img src={logo} alt="header-logo" />
       </section>
+      <hr></hr>
     </div>
   );
 };

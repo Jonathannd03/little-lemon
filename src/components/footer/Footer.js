@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/images/logo.png";
-import "./Footer.scss"
+import "./Footer.scss";
 
 const navMenu = [
   {
@@ -31,8 +31,8 @@ const navMenu = [
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <img src={logo} alt="footer-logo" />
+    <div className="footer-container">
+      <img src={logo} alt="footer-logo" className="footer-logo" />
       <section className="navigation">
         <h2>Restaurant Navigation</h2>
         <ul>
@@ -58,9 +58,15 @@ const Footer = () => {
       <section>
         <h2>Social media</h2>
         <ul>
-          <li>Facebook</li>
-          <li>Instagram</li>
-          <li>Tiktok</li>
+          <li>
+            <a href="facebook.com">Facebook</a>
+          </li>
+          <li>
+            <a href="instagram.com">Instagram</a>
+          </li>
+          <li>
+            <a href="tiktok.com">Tiktok</a>
+          </li>
         </ul>
       </section>
     </div>

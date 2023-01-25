@@ -1,10 +1,18 @@
-.header{
-    position:block;
-    display: inline-flex;
-    padding: 3rem 10rem;
+.header-container {
+  background-color: #938f8f;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  margin-top: 3rem;
 
-    img{
-        height: 16rem;
-        width: auto;
+  .container-item1 {
+    margin-left: 15rem;
+  }
+
+  .container-item2 {
+    text-align: center;
+    img {
+      height: 19rem;
+      width: auto;
     }
+  }
 }
