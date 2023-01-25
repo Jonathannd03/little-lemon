@@ -1,0 +1,25 @@
+.footer-container {
+  background-color: #938f8f;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  padding: 2rem 6rem;
+
+  .footer-logo {
+    height: 19rem;
+    width: auto;
+  }
+
+  section {
+    margin-top: 5rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}

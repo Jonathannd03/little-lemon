@@ -1,0 +1,46 @@
+.container {
+  display: grid;
+  height: auto;
+  width: 21rem;
+  border: 1px solid;
+  border-radius: 5px;
+  .container-item1 {
+    border-bottom: 1px solid;
+    img {
+      height: 15rem;
+      width: auto;
+    }
+  }
+
+  .container-item2 {
+    .container-item2-1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .title {
+        padding-left: 1rem;
+      }
+
+      .price {
+        text-align: end;
+        color: red;
+        padding-right: 1rem;
+      }
+    }
+
+    .container-item2-2 {
+      padding: 0 1rem;
+    }
+
+    .container-item2-3 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 1rem;
+
+      img {
+        height: auto;
+        width: 3rem;
+      }
+    }
+  }
+}

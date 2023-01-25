@@ -1,0 +1,21 @@
+.testimonial-container {
+  height: auto;
+  width: 18rem;
+  padding: 2rem;
+  border: 1px solid;
+  border-radius: 5px;
+
+  .testimonial-container-item1 {
+    text-align: start;
+  }
+  .testimonial-container-item2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;
+
+    .img {
+      height: auto;
+      width: 7rem;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+/* Specials container ************************************************** */
+.specials-container {
+  padding: 3rem 0;
+
+  .sub-container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+
+    .sub-container1-item1 {
+      margin-left: 15rem;
+    }
+
+    .sub-container1-item2 {
+      text-align: center;
+    }
+  }
+
+  .sub-container2 {
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: repeat(3, 400px);
+    grid-column-gap: 0ch;
+    justify-content: center;
+  }
+}
+
+/* Testmonials container ************************************************** */
+
+.testimonials-container {
+  display: grid;
+  padding: 3rem 0;
+  background-color: #938f8f;
+
+  .container-item1 {
+    text-align: center;
+  }
+
+  .container-item2 {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+    grid-column-gap: 0ch;
+    margin-top: 2rem;
+  }
+}
+
+/* display container ************************************************** */
+.display-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem 0;
+  justify-items: center;
+
+  .container-item1 {
+    width: 30rem;
+    height: auto;
+  }
+
+  .container-item2 {
+    .img {
+      width: 20rem;
+      height: auto;
+      border: 1px solid;
+    }
+
+    .image1 {
+      position: relative;
+      top: 80px;
+      left: 80px;
+    }
+    .image2 {
+    }
+  }
+}

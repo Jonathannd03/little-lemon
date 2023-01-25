@@ -1,3 +1,33 @@
-.navbar {
-  background-color: #000;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-auto-rows: minmax(150px, auto);
+  margin-top: 2rem;
+  justify-content: center;
+
+  .grid-item1 {
+    text-align: center;
+    left: 5rem;
+
+    img {
+      width: auto;
+      height: 8rem;
+    }
+  }
+
+  .grid-item2 {
+    ul {
+      margin-top: 4rem;
+
+      li {
+        display: inline-flex;
+        margin-left: 1rem;
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
 }

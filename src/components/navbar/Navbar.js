@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/logo.png";
+import { images } from "../../constants";
 import "./Navbar.scss";
 
 const navMenu = [
@@ -31,9 +31,12 @@ const navMenu = [
 
 const Navbar = () => {
   return (
-    <div className="navbar">
-      <img src={logo} alt="logo" />
-      <nav>
+    <nav className="grid-container">
+      <div className="grid-item1">
+        <img src={images.logo} alt="logo" />
+      </div>
+
+      <div className="grid-item2">
         <ul>
           {navMenu.map((menu, index) => {
             return (
@@ -45,8 +48,8 @@ const Navbar = () => {
             );
           })}
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 
