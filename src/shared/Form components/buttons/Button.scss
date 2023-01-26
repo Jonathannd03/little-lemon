@@ -1,10 +1,11 @@
-button {
+.my-button {
   background-color: black;
   border: none;
   border-radius: 5px;
   height: 3rem;
   width: 12rem;
   box-shadow: 1px;
+  margin-top: 0.5rem;
 
   .text {
     color: white;

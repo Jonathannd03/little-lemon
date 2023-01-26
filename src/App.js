@@ -1,18 +1,25 @@
-import "./App.css";
-import Navbar from "./components/navbar/Navbar";
-import Header from "./components/header/Header";
-import Main from "./components/main/Main";
-import Footer from "./components/footer/Footer";
+import { ChakraProvider } from "@chakra-ui/react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import BookingPage from "./components/form/booking page/BookingPage";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
     <>
-      <div className="my-app">
-        <Navbar />
-        <Header />
-        <Main />
-        <Footer />
-      </div>
+      <ChakraProvider>
+        <div className="my-app">
+          <Router>
+            <Routes>
+              <Route exact path="/" element={<Home />}></Route>
+              <Route
+                exact
+                path="/order-online"
+                element={<BookingPage />}
+              ></Route>
+            </Routes>
+          </Router>
+        </div>
+      </ChakraProvider>
     </>
   );
 }

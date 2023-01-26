@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../shared/buttons/Button";
+import Button from "../../shared/Form components/buttons/Button";
 import RegularCard from "../../shared/cards/regular card/RegularCard";
 import TestimonialCard from "../../shared/cards/testimonialCard/TestimonialCard";
 import { images } from "../../constants";
@@ -31,7 +31,7 @@ const Main = () => {
             <h2>Specials</h2>
           </div>
           <div className="sub-container1-item2">
-            <Button child="On The Menu" />
+            <Button text="On The Menu" />
           </div>
         </div>
         <div className="sub-container2">

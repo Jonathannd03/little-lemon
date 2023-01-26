@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.scss";
-import Button from "../../shared/buttons/Button";
+import Button from "../../shared/Form components/buttons/Button";
 import logo from "../../assets/images/logo.png";
 
 const Header = () => {
@@ -15,7 +15,7 @@ const Header = () => {
           aliqua. Ut enim ad minim veniam, quis nostrud<br></br> exercitation
           ullamco laboris nisi ut aliquip ex ea commodo<br></br> consequat.
         </p>
-        <Button child="Reserve a table" />
+        <Button text="Reserve a table" />
       </section>
 
       <section className="container-item2">
