@@ -6,12 +6,13 @@
   justify-content: center;
 
   .grid-item1 {
-    text-align: center;
+    justify-items: center;
     left: 5rem;
 
     img {
       width: auto;
       height: 8rem;
+      margin-left: 13rem;
     }
   }
 
@@ -23,9 +24,10 @@
         display: inline-flex;
         margin-left: 1rem;
 
-        a {
+        .link {
           text-decoration: none;
           color: black;
+          font-size: 1.3rem;
         }
       }
     }
