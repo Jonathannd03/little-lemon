@@ -2,8 +2,9 @@ import React from "react";
 import "./Header.scss";
 import Button from "../../shared/Form components/buttons/Button";
 import restauranfood from "../../assets/images/restauranfood.jpg";
+import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div className="header-container">
       <section className="container-item1">
@@ -19,7 +20,9 @@ const Header = () => {
           aliqua. Ut enim ad minim veniam, quis nostrud<br></br> exercitation
           ullamco laboris nisi ut aliquip ex ea commodo<br></br> consequat.
         </p>
-        <Button text="Reserve a table" />
+        <Link to="/order-online">
+          <Button text="Reserve a table" onClick={props.onClick} />
+        </Link>
       </section>
 
       <section className="container-item2">

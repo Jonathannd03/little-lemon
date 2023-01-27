@@ -24,11 +24,12 @@
   .container-item2 {
     width: 25%;
     height: 50vh;
-    position: relative;
     border-radius: 25px;
-    top: 15vh;
+    top: 30vh;
     align-items: center;
     img {
+      margin-left: 8rem;
+      margin-top: 8rem;
       object-fit: cover;
       width: 30rem;
       height: auto;
