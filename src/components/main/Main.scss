@@ -1,6 +1,6 @@
 /* Specials container ************************************************** */
 .specials-container {
-  padding: 3rem 0;
+  padding: 5rem 0;
 
   .sub-container1 {
     display: grid;
@@ -8,6 +8,8 @@
 
     .sub-container1-item1 {
       margin-left: 15rem;
+      font-family: "Poppins", sans-serif;
+      font-size: 2rem;
     }
 
     .sub-container1-item2 {
@@ -28,11 +30,16 @@
 
 .testimonials-container {
   display: grid;
-  padding: 3rem 0;
-  background-color: #938f8f;
+  margin: 5rem 0;
+  padding: 3rem;
+  background: #495e57;
 
   .container-item1 {
     text-align: center;
+    h2 {
+      font-family: "Poppins", sans-serif;
+      font-size: 2rem;
+    }
   }
 
   .container-item2 {
@@ -54,6 +61,17 @@
   .container-item1 {
     width: 30rem;
     height: auto;
+
+    h1 {
+      color: #f4ce14;
+      font-family: "Poppins", sans-serif;
+      font-size: 2rem;
+    }
+
+    p {
+      font-family: "Poppins", sans-serif;
+      margin: 5px 0;
+    }
   }
 
   .container-item2 {

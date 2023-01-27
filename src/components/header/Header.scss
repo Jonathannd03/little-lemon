@@ -1,18 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .header-container {
-  background-color: #938f8f;
+  background: #495e57;
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   margin-top: 3rem;
 
   .container-item1 {
     margin-left: 15rem;
+    padding: 3rem 0;
+
+    h1 {
+      color: #f4ce14;
+      font-family: "Poppins", sans-serif;
+      font-size: 2rem;
+    }
+
+    p {
+      font-family: "Poppins", sans-serif;
+      margin: 5px 0;
+    }
   }
 
   .container-item2 {
-    text-align: center;
+    width: 25%;
+    height: 50vh;
+    position: relative;
+    border-radius: 25px;
+    top: 15vh;
+    align-items: center;
     img {
-      height: 19rem;
-      width: auto;
+      object-fit: cover;
+      width: 30rem;
+      height: auto;
+      border-radius: 25px;
     }
   }
 }

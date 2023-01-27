@@ -28,16 +28,36 @@ const Main = () => {
       <section className="specials-container">
         <div className="sub-container1">
           <div className="sub-container1-item1">
-            <h2>Specials</h2>
+            <h2>
+              <strong>This week's specials!</strong>
+            </h2>
           </div>
           <div className="sub-container1-item2">
-            <Button text="On The Menu" />
+            <Button text="Online Menu" />
           </div>
         </div>
         <div className="sub-container2">
-          <RegularCard child={cardOne} />
-          <RegularCard child={cardOne} />
-          <RegularCard child={cardOne} />
+          <RegularCard
+            picture={images.greekSalad}
+            title="Greek Salad"
+            price="€ 12.99"
+            content="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo"
+            icon={images.delivery}
+          />
+          <RegularCard
+            picture={images.bruchetta}
+            title="Bruchetta"
+            price="€ 5.99"
+            content="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo"
+            icon={images.delivery}
+          />
+          <RegularCard
+            picture={images.lemonDessert}
+            title="Lemon Dessrt"
+            price="€ 5.00"
+            content="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo"
+            icon={images.delivery}
+          />
         </div>
       </section>
 
@@ -45,12 +65,29 @@ const Main = () => {
 
       <section className="testimonials-container">
         <div className="container-item1">
-          <h2>Testimonials</h2>
+          <h2>
+            <strong>Testimonials</strong>
+          </h2>
         </div>
         <div className="container-item2">
-          <TestimonialCard child={testimonialOne} />
-          <TestimonialCard child={testimonialOne} />
-          <TestimonialCard child={testimonialOne} />
+          <TestimonialCard
+            rating="5"
+            picture={images.profile}
+            testimony="Perspiciatis natus Sed ut perspiciatis unde omnis iste natus error."
+            name="Jackson Smith"
+          />
+          <TestimonialCard
+            rating="5"
+            picture={images.profile}
+            testimony="Perspiciatis natus Sed ut perspiciatis unde omnis iste natus error."
+            name="Jackson Smith"
+          />
+          <TestimonialCard
+            rating="5"
+            picture={images.profile}
+            testimony="Perspiciatis natus Sed ut perspiciatis unde omnis iste natus error."
+            name="Jackson Smith"
+          />
         </div>
       </section>
 
@@ -58,8 +95,12 @@ const Main = () => {
 
       <section className="display-container">
         <div className="container-item1">
-          <h1>Little Lemon</h1>
-          <p className="city-name">Chicago</p>
+          <h1>
+            <strong>Little Lemon</strong>
+          </h1>
+          <p className="city-name">
+            <strong>Chicago</strong>
+          </p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -72,8 +113,16 @@ const Main = () => {
           </p>
         </div>
         <div className="container-item2">
-          <img src={images.logo} alt="testm-pic1" className="image1 img" />
-          <img src={images.logo} alt="testm-pic2" className="image2 img" />
+          <img
+            src={images.restaurant}
+            alt="testm-pic1"
+            className="image1 img"
+          />
+          <img
+            src={images.mario_and_adrian}
+            alt="testm-pic2"
+            className="image2 img"
+          />
         </div>
       </section>
     </div>
