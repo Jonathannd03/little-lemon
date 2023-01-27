@@ -1,16 +1,20 @@
 import React from "react";
 import "./TestimonialCard.scss";
+import { images } from "../../../constants";
 
-const TestimonialCard = ({ child }) => {
+const TestimonialCard = (props) => {
   return (
     <div className="testimonial-container">
       <div className="testimonial-container-item1">
-        <h4>{child.title}</h4>
+        <h5>Rating:</h5>
+        <img src={images} />
+        {props.rating}
       </div>
       <div className="testimonial-container-item2">
-        <img src={child.picture} alt="card-pic" className="img" />
-        <p>{child.testimony}</p>
+        <img src={props.picture} alt="card-pic" className="img" />
+        <p>{props.name}</p>
       </div>
+      <div className="testimonial-container-item3">{props.testimony}</div>
     </div>
   );
 };
